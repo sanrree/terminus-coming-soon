@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+@font-face {
+  font-family: NeutralFace;
+  src: url("./NeutralFace.otf");
+}
+
+html {
+  background-color: black;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-image: url("/src//background.webp");
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: NeutralFace;
+}
+
+.neutral-face {
+  font-family: NeutralFace;
+}
+
+p,
+span {
+  font-family: Montserrat;
+}

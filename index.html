@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0 m-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./src/favicon.ico" />
+    <title>Terminus VC</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K28LZXNT");
+    </script>
+  </head>
+  <body class="w-full h-full flex flex-col">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K28LZXNT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <div class="p-0 m-0 w-full flex-1 pt-10 flex">
+      <aside
+        class="px-5 flex-1 flex flex-col xl:items-start md:px-20 xl:max-w-[600px] xl:pr-0"
+      >
+        <img class="max-w-32 md:max-w-52" src="./src/logo.svg" />
+        <h1 class="md:text-7xl text-4xl pt-10 md:pt-20">
+          Launching <br />
+          Soon
+        </h1>
+        <p class="pt-5 md:pt-10">
+          We're building a new venture platform focused on backing founders who
+          execute, scale, and lead in Central and Eastern Europe. Sign up to
+          stay ahead of our launch and see how we're creating real value for
+          founders—fueled by a fast-moving ecosystem and an uncompromising
+          approach to growth.
+        </p>
+        <form
+          id="subscribe"
+          action="https://formspree.io/f/mwpkkyyd"
+          method="POST"
+          class="mt-5 md:self-start"
+        >
+          <p class="font-bold">Get notified when we go live!</p>
+          <input
+            type="email"
+            name="email"
+            placeholder="EMAIL"
+            class="mt-2 bg-transparent border stroke-white w-full rounded-md px-2 py-2"
+          />
+          <button class="bg-white w-full mt-1 py-2 px-2 rounded-md">
+            <p class="text-black neutral-face">subscribe</p>
+          </button>
+        </form>
+        <div id="post-subscribe" class="mt-10 self-start hidden">
+          <p class="">Thanks so much for signing up!</p>
+        </div>
+      </aside>
+      <aside
+        class="flex-1 items-center justify-center hidden mb-[10%] px-10 xl:flex"
+      >
+        <img src="./src/logo.webp" />
+      </aside>
+    </div>
+    <p class="md:px-20 px-5 pt-5 pb-5">
+      © Copyrights Terminus | All Rights Reserved
+    </p>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

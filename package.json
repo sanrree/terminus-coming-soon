@@ -1,0 +1,21 @@
+{
+  "name": "coming-soon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
