@@ -2,6 +2,8 @@ var form = document.getElementById("subscribe");
 
 async function handleSubmit(event) {
   event.preventDefault();
+  document.getElementById("submit-bt").setAttribute("disabled", true);
+  document.getElementById("submit-bt").style.opacity = 0.8;
   var status = document.getElementById("post-subscribe");
   var data = new FormData(event.target);
   fetch(event.target.action, {
