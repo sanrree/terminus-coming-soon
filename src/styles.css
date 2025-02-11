@@ -17,7 +17,13 @@ html {
 body {
   background-color: black;
   background-size: cover;
+}
+
+.body {
   background-image: url("/src//background.webp");
+}
+
+.disclamer-body {
 }
 
 h1,
