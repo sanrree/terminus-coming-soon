@@ -56,30 +56,103 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <div class="p-0 m-0 w-full pt-5 md:pt-10 flex-1 flex">
-      <aside
-        class="px-5 flex-1 flex flex-col xl:items-start md:px-20 xl:max-w-[600px] xl:pr-0"
-      >
+    <section class="w-full pt-10 px-8 flex-1 flex">
+      <aside class="flex-1 flex flex-col xl:items-start">
         <img class="max-w-32 md:max-w-52" src="./src/logo.svg" />
-        <h1 class="md:text-7xl text-5xl mt-10">
-          Launching <br />
-          Soon
+        <h1 class="md:text-5xl text-3xl mt-10">
+          Predicting Outliers in Systematically Misprized Markets
         </h1>
-        <p class="pt-5 md:pt-5 text-sm mt-5">
-          Terminus VC is a solo GP fund led by Roman Nováček, who has built an
-          impressive track record in region of Central & Eastern Europe,
-          Caucassus and Central Asia. The fund aims to bridge the gap between
-          local seed funding and Western European Series A investors in the
-          region. Terminus combines traditional VC expertise with data-driven
-          processes to evaluate investment opportunities.
+        <p class="text-base mt-5 opacity-80">
+          Capital flows to founders who pitch well. We invest in founders who
+          build well. We measure technical depth: code quality, architecture
+          scalability, engineering talent density.
         </p>
-        <form
-          id="subscribe"
-          action="https://formspree.io/f/xeoqqnbr"
-          method="POST"
-          class="md:self-start mt-5"
+
+        <a
+          id="submit-bt"
+          href="https://www.kreedl.com/terminusvc"
+          target="_blank"
+          class="bg-[#F2FCB3] mt-8 py-4 px-6 rounded-lg flex items-center gap-6 hover:gap-8 transition-all"
         >
-          <p class="font-bold">Get notified when we go live!</p>
+          <p class="text-black neutral-face">Submit Your Deck</p>
+          <img src="./src/icons/arrow.svg" class="w-6 h-6" alt="03" />
+        </a>
+      </aside>
+      <aside
+        class="flex-[1.2] items-center justify-center hidden px-10 xl:flex"
+      >
+        <img src="./src/logo.webp" />
+      </aside>
+    </section>
+    <section class="px-8 pt-32">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="feature-box">
+          <div class="feature-box-flare feature-box-flare-1"></div>
+          <div class="feature-box-flare feature-box-flare-2"></div>
+          <div class="feature-icon">
+            <img src="./src/icons/01.svg" alt="01" />
+          </div>
+          <h2 class="feature-title">
+            Central & Eastern Europe, Türkiye, Central Asia, Caucasus
+          </h2>
+          <p class="feature-description">
+            Deep engineering talent. Emerging market opportunity. We back
+            technical founders building defensible products.
+          </p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-flare feature-box-flare-1"></div>
+          <div class="feature-box-flare feature-box-flare-2"></div>
+          <div class="feature-icon">
+            <img src="./src/icons/02.svg" alt="02" />
+          </div>
+          <h2 class="feature-title">€500K to €3M | Pre-Seed to Series A</h2>
+          <p class="feature-description">
+            Sector-agnostic. Flexible deal structuring: equity, secondaries,
+            structured deals. Not constrained by business model complexity or
+            perceived market size.
+          </p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-box-flare feature-box-flare-1"></div>
+          <div class="feature-box-flare feature-box-2"></div>
+          <div class="feature-icon">
+            <img src="./src/icons/03.svg" alt="03" />
+          </div>
+          <h2 class="feature-title">Proprietary Infrastructure</h2>
+          <p class="feature-description">
+            Institutional-grade data infrastructure for technical evaluation.
+            Automates investment analysis across code quality, architecture
+            scalability, and engineering talent density.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="flex md:justify-center px-8 pt-10 md:pt-28 relative">
+      <div
+        class="absolute top-0 pointer-events-none left-0 right-0 bottom-0 flex items-center justify-center"
+      >
+        <div
+          class="opacity-30 aspect-[2/1] w-full max-w-4xl rounded-xl bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.45)_0%,_rgba(255,255,255,0.25)_30%,_rgba(255,255,255,0.12)_45%,_transparent_70%)]"
+        ></div>
+      </div>
+      <div class="flex flex-1 md:flex-initial md:justify-center flex-col">
+        <h4 class="text-lg opacity-60">Ready to Connect?</h4>
+        <div class="flex md:items-center">
+          <h3 class="md:text-6xl text-4xl pt-4">Let's Talk!</h3>
+          <div
+            class="w-16 h-16 rounded-full bg-[#F2FCB3] flex items-center justify-center ml-4"
+          >
+            <img src="./src/icons/arrow.svg" alt="03" />
+          </div>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="0ddea8e6-729d-49b5-9f9a-b22c2908b0ae"
+          />
+          <p class="opacity-60 mt-6">Get notified when we go live!</p>
           <input
             type="email"
             name="email"
@@ -88,78 +161,67 @@
           />
           <button
             id="submit-bt"
-            class="bg-white w-full mt-3 py-4 px-2 rounded-md"
+            class="bg-[#F2FCB3] w-full mt-3 py-4 px-2 rounded-lg"
           >
-            <p class="text-black neutral-face">subscribe</p>
+            <p class="text-black neutral-face background">subscribe</p>
           </button>
         </form>
-        <div id="post-subscribe" class="mt-10 mb-10 self-start hidden">
-          <p class="">Thanks so much for signing up!</p>
-        </div>
-      </aside>
-      <aside class="flex-1 items-center justify-center hidden px-10 xl:flex">
-        <img src="./src/logo.webp" />
-      </aside>
-    </div>
-    <span class="text-[10px] opacity-50 text-justify pt-5 px-5 md:px-20">
-      Investment products designed by Terminus Ventures (Terminus GP S.à r.l.
-      and any of its associates incl. Terminus Seed Fund SCSp) are tailored
-      exclusively for "Professional Investors", as defined under the Markets in
-      Financial Instruments Directive (MiFID II), who are capable of making
-      their own investment decisions, properly assessing associated risks, and
-      affirming they meet the minimum investment threshold of EUR 125,000.
-      Terminus GP S.à r.l. acts as an AIFM of Terminus Seed Fund SCSp and is
-      subject to Luxembourg law. This website serves purely for informational
-      and marketing purposes in jurisdictions where distribution or use of such
-      information is lawful. It is designed to inform about Terminus Ventures
-      investment approach, without constituting an offer, solicitation,
-      recommendation, or advice to buy or sell securities or to engage in any
-      investment strategy.<br />
-      In accordance with the Sustainable Finance Disclosure Regulation (SFDR),
-      Terminus Ventures hereby discloses that it does not consider the adverse
-      impacts of investment decisions on sustainability factors within the
-      investment decision-making process. Pursuant to Article 6 of Regulation
-      (EU) 2019/2088 on sustainability-related disclosures in the financial
-      services sector (SFDR), the Fund classifies itself as a financial product
-      that does not promote environmental or social characteristics nor has
-      sustainable investment as its objective. This position reflects our
-      focused investment strategy (Seed and Series A investments) where ESG
-      risks are considered immaterial. Our approach to sustainability factors
-      and risk assessment is to prioritize financial performance while
-      acknowledging that the fund does not actively engage in evaluating
-      environmental, social, and governance (ESG) criteria as part of its
-      investment analysis. This is because, in the context of the fund's
-      investment strategy, it is not possible to conduct detailed diligence on
-      the principal adverse impacts of the investments on sustainability
-      factors, as the availability of datapoints limits the ability to
-      systematically assess the potential adverse impact of investment decisions
-      on all sustainability factors. Investors should note that this approach
-      may evolve as market practices and regulatory frameworks develop.<br />
-      All information provided on this website is without representations or
-      warranties of any kind, and Terminus Ventures expressly disclaims any
-      liability for errors, omissions, or inaccuracies contained herein. The
-      content is not to be reproduced, distributed, or published without
-      Terminus Ventures' prior written consent. By accessing this site, users
-      confirm their status as Professional Investors, agree to the terms herein,
-      and acknowledge that the site's content does not constitute an investment
-      offer.<br />
-      For more information about our fund, investment strategy, or inquiries
-      about potential investment opportunities, please reach out to us via email
-      at roman@terminus.vc.
-    </span>
-    <div
-      class="flex w-full py-4 justify-between px-5 md:px-20 mb-2 flex-col md:flex-row"
-    >
-      <!-- <a class="text-xs opacity-60 underline" href="/disclaimer.html"
-        >DISCLAIMER</a
-      > -->
-      <p class="text-xs mt-2 md:mt-0">
-        if you are interested in more info about the fund, reach out to us at
-        <a href="mailto:discover@terminus.vc"
-          ><strong>discover@terminus.vc</strong></a
-        >
-      </p>
-    </div>
+      </div>
+    </section>
+    <section class="flex flex-col justify-center px-8 pt-20 pb-8">
+      <h4>Terminus Ventures</h4>
+      <p class="mt-2 primary">discover@terminus.vc</p>
+      <hr class="opacity-10 my-5" />
+      <p>Disclaimer</p>
+      <span class="text-[10px] opacity-50 text-justify pt-5">
+        Investment products designed by Terminus Ventures (Terminus GP S.à r.l.
+        and any of its associates incl. Terminus Seed Fund SCSp) are tailored
+        exclusively for "Professional Investors", as defined under the Markets
+        in Financial Instruments Directive (MiFID II), who are capable of making
+        their own investment decisions, properly assessing associated risks, and
+        affirming they meet the minimum investment threshold of EUR 125,000.
+        Terminus GP S.à r.l. acts as an AIFM of Terminus Seed Fund SCSp and is
+        subject to Luxembourg law. This website serves purely for informational
+        and marketing purposes in jurisdictions where distribution or use of
+        such information is lawful. It is designed to inform about Terminus
+        Ventures investment approach, without constituting an offer,
+        solicitation, recommendation, or advice to buy or sell securities or to
+        engage in any investment strategy.<br />
+        In accordance with the Sustainable Finance Disclosure Regulation (SFDR),
+        Terminus Ventures hereby discloses that it does not consider the adverse
+        impacts of investment decisions on sustainability factors within the
+        investment decision-making process. Pursuant to Article 6 of Regulation
+        (EU) 2019/2088 on sustainability-related disclosures in the financial
+        services sector (SFDR), the Fund classifies itself as a financial
+        product that does not promote environmental or social characteristics
+        nor has sustainable investment as its objective. This position reflects
+        our focused investment strategy (Seed and Series A investments) where
+        ESG risks are considered immaterial. Our approach to sustainability
+        factors and risk assessment is to prioritize financial performance while
+        acknowledging that the fund does not actively engage in evaluating
+        environmental, social, and governance (ESG) criteria as part of its
+        investment analysis. This is because, in the context of the fund's
+        investment strategy, it is not possible to conduct detailed diligence on
+        the principal adverse impacts of the investments on sustainability
+        factors, as the availability of datapoints limits the ability to
+        systematically assess the potential adverse impact of investment
+        decisions on all sustainability factors. Investors should note that this
+        approach may evolve as market practices and regulatory frameworks
+        develop.<br />
+        All information provided on this website is without representations or
+        warranties of any kind, and Terminus Ventures expressly disclaims any
+        liability for errors, omissions, or inaccuracies contained herein. The
+        content is not to be reproduced, distributed, or published without
+        Terminus Ventures' prior written consent. By accessing this site, users
+        confirm their status as Professional Investors, agree to the terms
+        herein, and acknowledge that the site's content does not constitute an
+        investment offer.<br />
+        For more information about our fund, investment strategy, or inquiries
+        about potential investment opportunities, please reach out to us via
+        email at roman@terminus.vc.
+      </span>
+    </section>
+
     <!-- <p
       class="px-5 pt-5 pb-5 md:absolute md:right-0 md:bottom-0 opacity-50 text-sm"
     >
